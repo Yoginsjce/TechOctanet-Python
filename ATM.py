@@ -52,7 +52,7 @@ class ATMApp:
         self.root.title("ATM Machine")
         self.root.geometry("400x600")
 
-        # Load and set background image
+       
         self.bg_image = Image.open(bg_image_path)
         self.bg_image = self.bg_image.resize((400, 600), Image.Resampling.LANCZOS)
         self.bg_photo = ImageTk.PhotoImage(self.bg_image)
@@ -161,7 +161,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     atm_machine = ATMMachine(initial_balance=500)
 
-    # Replace with the path to your downloaded background image
+   
     bg_image_path = "atm image.jpg"
     app = ATMApp(root, atm_machine, bg_image_path)
     root.mainloop()
